@@ -1,0 +1,214 @@
+/* font */
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../font/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../font/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../font/Lato-Light.ttf) format('truetype');
+
+}
+
+/* ---------------------------------------
+------------------ sign ------------------
+------------------------------------------*/
+.sign {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sign .all {
+    display: flex;
+    gap: 300px;
+
+}
+
+@media (max-width: 767px) {
+    .sign .all {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .sign .all {
+        gap: 100px;
+    }
+}
+
+
+.sign .all>div:first-child {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .sign .all>div:first-child {
+        width: 100%;
+    }
+}
+
+.sign .all>div:last-child {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .sign .all>div:last-child {
+        width: 100%;
+    }
+}
+
+.sign .all>div h2 {
+    font-size: 21.21px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+@media (max-width: 767px) {
+    .sign .all>div h2 {
+        font-size: 18.21px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.sign .all>div p {
+    font-size: 14.32px;
+    color: #222222;
+    height: 120px;
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .sign .all>div p {
+        font-size: 12.32px;
+        height: 90px;
+
+    }
+}
+
+.sign .all>div:first-child .title p {
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+
+.sign .all form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 767px) {
+    .sign .all form {
+        gap: 20px;
+    }
+}
+
+.sign .all form div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .sign .all form div {
+        gap: 10px;
+    }
+}
+
+.sign .all form div.checkbox {
+    flex-direction: row;
+}
+
+.sign .all form div.checkbox input {
+    accent-color: #e8e8e8;
+}
+
+.sign .all form label {
+    font-size: 14.32px;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: Lato-Bold;
+
+}
+
+@media (max-width: 767px) {
+    .sign .all form label {
+        font-size: 12.32px;
+
+    }
+
+}
+
+.sign .all form input {
+    outline: none;
+    border: 1px #eee solid;
+    padding: 18px;
+}
+
+@media (max-width: 767px) {
+    .sign .all form input {
+        padding: 10px;
+
+    }
+}
+
+
+.sign .all form input:focus {
+    border: 1px #333 solid;
+    transition: 0.3s;
+}
+
+.sign .all form input[type=submit] {
+    background-color: #333333;
+    color: #f9f9fb;
+    text-transform: uppercase;
+    font-size: 17.9px;
+    border: solid 1px transparent;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width: 767px) {
+    .sign .all form input[type=submit] {
+        font-size: 13.9px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sign .all form input[type=submit] {
+        font-size: 15.9px;
+    }
+}
+
+.sign .all form input[type=submit]:hover {
+    border: solid 1px #333333;
+    background-color: transparent;
+    color: #333333;
+}
+
+.sign .all form input[type=submit]+label {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sign .all div:last-child form input[type=submit]+label {
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign .all div:last-child form:last-child input[type=submit]+label {
+    font-size: 10.6px;
+    color: #222222;
+}
